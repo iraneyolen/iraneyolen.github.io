@@ -21,11 +21,10 @@
             border-radius: 10px;
         }
         img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            border: 2px solid #ffffff;
+            width: 200px; /* Diperbesar agar tidak terlihat kecil */
+            height: auto; /* Otomatis menyesuaikan tinggi berdasarkan lebar */
             margin-bottom: 15px;
+            /* Hapus border-radius, border, dan object-fit untuk menghilangkan frame/lingkaran */
         }
         h1 {
             color: #ffffff;
@@ -61,7 +60,7 @@
 </head>
 <body>
     <div class="profil">
-        <img src="fotoprofily.png" alt="Foto Profil"> 
+        <img src="fotoprofily.png" alt="Foto Profil" onerror="this.src='https://via.placeholder.com/200x200?text=No+Image';"> 
         <h1>Yolen Irrane Raolika</h1>
         <p>Saya adalah mahasiswa aktif berorganisasi di Universitas Klabat sejak awal saya masuk, dan saat ini saya berada dalam organisasi fakultas yaitu BEM Fakultas Ilmu Komputer, memegang jabatan sebagai Kordinator BEM Multimedia CSSA 2026.</p>
         
