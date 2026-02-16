@@ -3,95 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Saya - GitHub Pages</title>
+    <title>Profil Saya</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #000000, #1a1a1a);
+            font-family: Arial, sans-serif;
+            background-color: #000000;
             color: #ffffff;
             text-align: center;
-            padding: 40px;
+            padding: 20px;
             margin: 0;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
         }
         .profil {
-            max-width: 600px;
+            max-width: 400px;
             margin: auto;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            padding: 40px;
-            border-radius: 25px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            background-color: #111111;
+            padding: 20px;
+            border-radius: 10px;
         }
         img {
             border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            border: 5px solid #00d4ff;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-        img:hover {
-            transform: scale(1.05);
+            width: 120px;
+            height: 120px;
+            border: 2px solid #ffffff;
+            margin-bottom: 15px;
         }
         h1 {
-            color: #00d4ff;
-            font-size: 2.8em;
+            color: #ffffff;
+            font-size: 1.8em;
             margin-bottom: 10px;
-            text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
-        }
-        h1::before {
-            content: "🌟 ";
         }
         p {
-            color: #e0e0e0;
-            font-size: 1.2em;
-            line-height: 1.7;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #00d4ff;
-            font-size: 2em;
+            color: #cccccc;
+            font-size: 1em;
+            line-height: 1.5;
             margin-bottom: 20px;
         }
-        .sosial {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        h2 {
+            color: #ffffff;
+            font-size: 1.4em;
+            margin-bottom: 15px;
         }
         .sosial a {
             display: inline-block;
-            margin: 10px 15px;
+            margin: 0 10px;
             text-decoration: none;
-            color: #00d4ff;
+            color: #ffffff;
             font-weight: bold;
-            font-size: 1.3em;
-            padding: 12px 25px;
-            border: 2px solid #00d4ff;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            background: rgba(0, 212, 255, 0.1);
-            position: relative;
+            padding: 8px 15px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
         }
         .sosial a:hover {
-            background: #00d4ff;
-            color: #000;
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.9);
-            transform: translateY(-5px);
-        }
-        .sosial a::before {
-            content: "📸 ";
+            background-color: #ffffff;
+            color: #000000;
         }
     </style>
 </head>
@@ -99,20 +63,12 @@
     <div class="profil">
         <img src="https://drive.google.com/drive/folders/1HSIWaB-AkJP6t71Oq7KOuXZuF6UqCZd1?usp=sharing" alt="Foto Profil"> 
         <h1>Yolen Irrane Raolika</h1>
-        <p>Saya adalah mahasiswa aktif berorganisasi di Universitas Klabat sejak awal saya masuk, dan saat ini saya berada dalam organisasi fakultas yaitu BEM Fakultas Ilmu Komputer, memegang jabatan sebagai Kordinator BEM Multimedia CSSA 2026. 🚀 Passionate about tech, design, and community building!</p>
+        <p>Saya adalah mahasiswa aktif berorganisasi di Universitas Klabat sejak awal saya masuk, dan saat ini saya berada dalam organisasi fakultas yaitu BEM Fakultas Ilmu Komputer, memegang jabatan sebagai Kordinator BEM Multimedia CSSA 2026.</p>
         
         <h2>Media Sosial</h2>
         <div class="sosial">
             <a href="https://instagram.com/iraneyolen_" target="_blank">Instagram</a>
         </div>
     </div>
-
-    <script>
-        window.addEventListener('scroll', function() {
-            const profil = document.querySelector('.profil');
-            const scrollY = window.scrollY;
-            profil.style.transform = `translateY(${scrollY * 0.1}px)`;
-        });
-    </script>
 </body>
 </html>
